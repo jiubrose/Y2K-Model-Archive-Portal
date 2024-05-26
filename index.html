@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Y2K Model Archive Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div id="wakeup" class="glitch-effect"><span class="active">_</span></div>
+    <div id="main">
+        <div class="text glitch-effect">
+            <h1 onclick="display_text()">> ENTER PORTAL / MODEL ARCHIVE</h1>
+            <div id="bodytext">
+            </div>
+        </div>
+        <div class="container">
+            <div class="model-viewer">
+                <model-viewer alt="" src="aphrodite_crouching.glb" ar  auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" ar-scale="fixed" skybox-image="distribution_board_4k.hdr" skybox-height="0m" xr-environment >
+                    <effect-composer render-mode="quality" msaa="8">
+                        <outline-effect strenght="99" color="green"></outline-effect>
+                    </effect-composer>
+                </model-viewer>
+            </div>
+        </div>
+        <button id="reload" class="controls" onclick="location.reload()">RELOAD PAGE</button>
+        <div id="notepad" class="controls">
+            <div>CONTROL PANEL</div>
+            <textarea name="" ></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
